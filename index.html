@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css" integrity="sha384-7ynz3n3tAGNUYFZD3cWe5PDcE36xj85vyFkawcF6tIwxvIecqKvfwLiaFdizhPpN" crossorigin="anonymous">
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.16/mediaelementplayer.min.css" />
+
+    <title>ROCIO Y DANIEL</title>
+
+</head>
+<body>
+<!--
+        <header >
+        <nav>
+            <div class="logo">
+
+               
+            </div>
+            <div class="hamburger" id="hamburger">
+                &#9776;
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#section1">Detalles</a></li>
+                <li><a href="#section2">Información</a></li>
+                <li><a href="#section3">Redes</a></li>
+
+                <li><a href="#section4" class="rsvp-btn">RSVP</a></li>
+                <br>
+            </ul>
+        </nav>
+    </header>
+-->
+
+    <div class="background">
+        
+    </div>
+        <div class="audiodiv">
+            <audio id="myAudio" preload="auto">
+            <source src="./brunomars.mp3" type="audio/mpeg">
+            </audio>
+            <div id="playPauseBtn" class="play">
+                <img src="./img/notamusical.png" alt="Icono de música">
+            </div>
+        </div>
+
+    <p data-aos="fade-up" class="titulocontador">Faltan:</p>
+    <div class="contador">
+    
+        <div class="bloque">
+            <div data-aos="fade-up" id="dias" class="numero"></div>
+            <div data-aos="fade-up" class="etiqueta">Días</div>
+        </div>
+
+        <div class="bloque">
+            <div data-aos="fade-up" id="horas" class="numero"></div>
+            <div data-aos="fade-up" class="etiqueta">horas</div>
+        </div>
+
+        <div class="bloque">
+            <div data-aos="fade-up" id="minutos" class="numero"></div>
+            <div data-aos="fade-up" class="etiqueta">minutos</div>
+        </div>
+
+        <div class="bloque">
+            <div data-aos="fade-up" id="segundos" class="numero"></div>
+            <div data-aos="fade-up" class="etiqueta">segundos</div>
+        </div>
+    </div>
+
+
+<div class="datos-ubicacion">
+    <div>
+        <img data-aos="fade-down" src="./img-editable/icono1.png" alt="">
+    </div>
+
+   <div class="datos">
+  
+     <div >
+        <p data-aos="fade-up">Te esperamos a las 19:00 Hs <br>  Hipódromo de San Isidro - Salon Tribuna Oficial. </p>
+        <a data-aos="fade-up" class="boton" href="">Cómo llegar</a>
+    </div>
+  </div>
+</div>
+
+<div class="novios">
+    <img src="./img-editable/fotos1.png" alt="">
+    <div class="icono2">
+      <img data-aos="fade-down" src="./img-editable/icono2.png" alt="">
+    </div>
+    <div class="icono3">
+      <img  data-aos="fade-up" src="./img-editable/icono3.png" alt="">
+    </div>
+</div>
+
+ <div class="timeline">
+         <p class="timeline-title">El gran día...</p>
+      <div class="iconos">
+            <div  class="iconos-block">
+                <img data-aos="fade-up"  src="./img-editable/tulugar.png" alt="icono">
+                <p data-aos="fade-up" > 18:45 Hs <br> Toma tu lugar</p>
+               
+            </div>
+         
+            <div  class="iconos-block">
+                <img data-aos="fade-up"  src="./img-editable/anillos.png" alt="icono">
+                <p data-aos="fade-up">19:00 Hs <br> Ceremonia</p>
+               
+            </div>
+            <div  class="iconos-block">
+                <img data-aos="fade-up"  src="./img-editable/copas.png" alt="icono">
+                <p data-aos="fade-up">20:30 Hs <br>Brindis</p>
+               
+            </div>
+           
+            <div  class="iconos-block">
+                <img data-aos="fade-up"  src="./img-editable/cena.png" alt="icono">
+                <p data-aos="fade-up"  >22:00 Hs <br>Cena</p>
+              
+            </div>
+             <div  class="iconos-block">
+                <img data-aos="fade-up"  src="./img-editable/fiesta.png" alt="icono">
+                <p data-aos="fade-up"  >23:00 Hs <br>Fiesta</p>
+              
+            </div>
+  
+          
+              <div  class="iconos-block">
+                <img data-aos="fade-up"  src="./img-editable/vueltaacasa.png" alt="icono">
+                <p data-aos="fade-up"  >03:00 Hs <br> Vuelta a casa</p>
+               
+            </div>
+        </div>
+    </div>
+
+    <div id="section2" class="accordion">
+        <H3 data-aos="fade-up">Antes de que nos consultes...</H3>
+        <div data-aos="fade-up"  class="accordion-item">
+            <button class="accordion-header">¿CÓMO ME VISTO?</button>
+            <div class="accordion-content">
+                <p>FORMAL ELEGANTE - EL BLANCO LO DEJAMOS PARA LA NOVIA Y EL NEGRO PARA OTRA OCASIÓN. <br> NUESTRAS FOTOS VAN A QUEDAR PARA SIEMPRE, ELEGANTES Y CON MUCHA ONDA, PERO SIN ESTRÉS. 🤍
+                </p> <br>
+            </div>
+        </div>
+         <div data-aos="fade-up"  class="accordion-item">
+            <button class="accordion-header">¿QUÉ LES REGALO?</button>
+            <div class="accordion-content">
+                 
+                    <p class="titulo-regalo">NUESTRO MAYOR REGALO ES QUE VENGAS A CELEBRAR NUESTRO AMOR, <br> PERO SI QUERES COLABORAR CON NUESTRA LUNA DE MIEL:
+
+                </p>
+                <div class="gift-block">
+                    <div class="gift-box">
+                        <div class="boton2" onclick="copyToClipboard('Bodaroydani')">ALIAS PESOS</div>
+                    </div>
+                    <br>
+                    <div class="gift-box">
+                        <div class="boton2" onclick="copyToClipboard('Bodaroydani.usd')">ALIAS USD</div>
+                    </div>
+                    <br>
+                   
+                </div>
+                <p>Titular de la cuenta: Rocio Escalante  </p>
+                
+            </div>
+        </div>
+
+
+       <div data-aos="fade-up"  class="accordion-item">
+            <button class="accordion-header">¿DÓNDE ESTACIONO?</button>
+            <div class="accordion-content">
+                <p>EL SALÓN CUENTA CON ESPACIO DE ESTACIONAMIENTO PARA TODOS LOS INVITADOS.</p> 
+
+            </div>
+        </div>
+         <div data-aos="fade-up"  class="accordion-item">
+            <button class="accordion-header">¿CÓMO LLEGO?</button>
+            <div class="accordion-content">
+                <p> 🚌 CERCA DE LA FECHA LES VAMOS A COMPARTIR LA OPCIÓN DE IR Y VOLVER A CAPITAL FEDERAL EN MICRO, DESDE UN PUNTO DE ENCUENTRO A CONFIRMAR. LOS NOVIOS PONEN ESTE SERVICIO A DISPOSICIÓN DE QUIENES LO NECESITEN: SI QUERÉS SUMARTE, CONFIRMANOS ANTES DEL 15/11/2026 PARA PODER COORDINARLO. </p> 
+
+            </div>
+        </div>
+          <div data-aos="fade-up"  class="accordion-item">
+            <button class="accordion-header">¿EL SALÓN ES AL AIRE LIBRE?</button>
+            <div class="accordion-content">
+                <p>NO, PERO DEBÉS TENER EN CUENTA QUE LA CEREMONIA SÍ SE REALIZARÁ AL AIRE LIBRE 🍃</p> 
+
+            </div>
+        </div>
+          <div data-aos="fade-up"  class="accordion-item">
+            <button class="accordion-header">¿PUEDO ASISTIR CON ACOMPAÑANTE?</button>
+            <div class="accordion-content">
+                <p>SI TU INVITACIÓN INCLUYE ACOMPAÑANTE ESTARÁ INDICANDO AL MOMENTO DE RECIBIRLA. EN CASO CONTRARIO LA MISMA ES PERSONAL. 🤍</p> 
+
+            </div>
+        </div>
+
+    <br>
+        <div class="icono4">
+        <img data-aos="fade-down" src="./img-editable/icono4.png" alt="">
+        </div>
+        <div class="icono5">
+        <img  data-aos="fade-up" src="./img-editable/icono5.png" alt="">
+        </div>
+    </div>
+
+     <div class="forms">
+        
+
+        <form name="asistenciaform" method="POST" action="https://script.google.com/macros/s/AKfycbytx4B_-ro5eWnlGmvxaEfmqrNBFrqU8nBLyU7ZiG5HGgctSF_pdOTHyTWpsUElvg/exec" class="formulario">
+
+            <label data-aos="fade-up" class="formtitle">Sólo faltas vos, Venis?</label>
+
+            <div class="radio-group">
+                <label class="radio-option">
+                <input type="radio" name="ASISTENCIA" value="sí" required />
+                <span>Sí</span>
+                </label>
+                <label class="radio-option">
+                <input type="radio" name="ASISTENCIA" value="no" />
+                <span>No</span>
+                </label>
+            </div>
+
+            <input type="text" name="NOMBRE" placeholder="Nombre" required />
+            <input type="text" name="APELLIDO" placeholder="Apellido" required />
+           <select name="DIETA" required>
+    <option value="" disabled selected>¿Alguna dieta especial?</option>
+    <option value="Nada">Nada / Como de todo</option>
+    <option value="Vegetariano">Vegetariano</option>
+    <option value="Vegano">Vegano</option>
+    <option value="Celíaco">Celíaco - intolerancia al gluten</option>
+</select>
+
+            <select name="TRASLADO" required>
+    <option value="" disabled selected>¿Vas a necesitar traslado?</option>
+    <option value="Sí">Sí</option>
+    <option value="No">No</option>
+    <option value="Aun no lo decido">Aún no lo decido</option>
+</select>
+
+     <textarea name="MENSAJE" placeholder="Dejale un mensaje a los novios 🤍"></textarea> 
+
+
+            <button type="submit" class="boton">ENVIAR</button>
+        </form>
+
+        <p data-aos="fade-up">RECORDÁ COMPLETAR UN FORMULARIO POR PERSONA. <br> HACELO ANTES DEL 15 DE NOVIEMBRE.</p>
+    
+    </div>
+
+  <div class="novios">
+        <img src="./img-editable/fotos2.png" alt="">
+    
+        
+        <div class="icono6">
+        <img  data-aos="fade-up" src="./img-editable/icono6.png" alt="">
+        </div>
+    </div>
+    
+
+    <div class="end">
+        <img data-aos="fade-up" src="./img-editable/manosanillos.png" alt="">
+        <h2 data-aos="fade-up" >Ro y Dani</h2>
+        <p data-aos="fade-down">Te esperamos</p>
+    </div>
+
+    <footer>
+        <div class="contenido">
+            <div>
+            <img src="./img/logosiquiero.png" alt="icono si quiero">
+                <p>Hecho con &hearts; <br>
+                &#169 <b>Si,quiero!</b> - invitaciones inteligentes.
+                <br> Todos los derechos reservados.</p>
+            </div>
+            
+            <div class="contenido-list">
+                <ul>
+                    <li><a target="_blank" href="https://www.instagram.com/siquiero.arg/"><i class="bi bi-instagram"></i></a></li>
+                    <li><a target="_blank" href="https://www.facebook.com/Invitaciones-web-112187784608681"><i class="bi bi-facebook"></i></a></li>
+                    <li><a target="_blank" href="mailto:siquiero.invitaciones@gmail.com"><i class="bi bi-envelope"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="./countdwon.js"></script>
+<script src="./reproductor.js"></script>
+<script src="./form.js"></script>
+
+<script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+ <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const audio = document.getElementById("myAudio");
+
+    // Escucha el primer scroll
+    const playOnScroll = () => {
+      audio.play().catch(e => {
+        console.warn("El navegador bloqueó la reproducción automática", e);
+      });
+      document.removeEventListener("scroll", playOnScroll); // Se ejecuta solo una vez
+    };
+
+    document.addEventListener("scroll", playOnScroll);
+  });
+</script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.16/mediaelement-and-player.min.js"></script>
+
+    <script>
+
+    function copyToClipboard(text) {
+       const tempInput = document.createElement("input");
+       document.body.appendChild(tempInput);
+       tempInput.value = text;
+       tempInput.select();
+       document.execCommand("copy");
+       document.body.removeChild(tempInput);
+       alert(`Copiaste los datos de cuenta "${text}" a tu portapapeles`);
+     }
+   </script>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const headers = document.querySelectorAll(".accordion-header");
+
+    headers.forEach((header) => {
+      header.addEventListener("click", function () {
+        const item = this.parentElement;
+        item.classList.toggle("active");
+
+        // Cierra otros ítems si querés que solo se abra uno a la vez:
+        headers.forEach((otherHeader) => {
+          const otherItem = otherHeader.parentElement;
+          if (otherItem !== item) {
+            otherItem.classList.remove("active");
+          }
+        });
+      });
+    });
+  });
+</script>
+     
+</body>
+</html>
